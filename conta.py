@@ -30,10 +30,10 @@ class CPoupanca(conta):
         self.detalhes(f'Saque negado{valor}')
 
 
-class CCorente(conta):# quando for colocar um  atributo adicional a gente cria um novo init na subi class ai chamamos o super psaando oq ele precisa  !
+class CCorente(conta):
       def __init__(self,agencia,conta, saldo,limite):
         super().__init__ (agencia,conta, saldo)
-        self.limite= limite# atributo adicional conta corrente.
+        self.limite= limite
 
       def sacar(self, valor):
         valor_sacado = self.saldo - valor
